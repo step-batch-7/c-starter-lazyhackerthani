@@ -1,5 +1,5 @@
 #include<stdio.h>
-float getSimpleInterest(int,float,int);
+float get_simple_interest(int,float,int);
 int main()
 {
   int principal,year;
@@ -10,11 +10,11 @@ int main()
   scanf("%f", &interest);
    printf("enter time (in years):");
   scanf("%d", &year);
-  float simpleInterest = getSimpleInterest(principal,interest,year);
-  printf("simpleInterest is %f", simpleInterest);
+  float simple_interest = get_simple_interest(principal,interest,year);
+  printf("simple interest is %f", simple_interest);
   return 0;
 }
 
-float getSimpleInterest(int principal,float interest,int year){
+float get_simple_interest(int principal,float interest,int year){
   return principal * (interest/100) * year;
 }

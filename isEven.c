@@ -1,10 +1,10 @@
 #include<stdio.h>
-int isEven(int);
+int is_even(int);
 int main()
 {
   int number;
   scanf("%d", &number);
-  switch (isEven(number))
+  switch (is_even(number))
   {
   case 0:
     printf("number is not an even number");
@@ -17,6 +17,6 @@ case 1:
   }
   return 0;
 }
-int isEven(int number){
+int is_even(int number){
   return (number+1) % 2;
 }
