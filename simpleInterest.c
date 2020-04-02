@@ -1,5 +1,5 @@
 #include<stdio.h>
-int getSimpleInterest(int,float,int);
+float getSimpleInterest(int,float,int);
 int main()
 {
   int principal,year;
@@ -15,6 +15,6 @@ int main()
   return 0;
 }
 
-int getSimpleInterest(int principal,float interest,int year){
+float getSimpleInterest(int principal,float interest,int year){
   return principal * (interest/100) * year;
 }
